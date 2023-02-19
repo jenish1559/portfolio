@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: radial-gradient(rgba(3, 28, 66, 0.91) 0%, rgba(0, 12, 30, 0.89) 100%) no-repeat;
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Jockey One' !important;
+        font-style: normal;
+        font-weight: 400;
+        
+}
+
+hr{
+  border: 1.5px solid #6AA5FF !important;
+  opacity: 1 !important;
+}
+li{
+    text-decoration: none;
+}
+
+button{
+    height: 2.5rem;
+    width: fit-content;
+    padding: 1.2rem;
+    
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+        
+}
+.nav-item-group{
+   color: aliceblue; 
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.nav-item{
+    flex-grow: 2;
+
+}
+.main{
+   height: 70%;
+   text-align: center;
+   display: grid;
+}
+.intro{
+    display: flex;
+    color: white;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+text-align: center;
+
+
+/* position: absolute;
+width: 466px;
+height: 188px;
+left: 407px;
+top: 177px; */
+}
