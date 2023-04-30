@@ -2,20 +2,36 @@
     margin: 0;
     padding: 0;
 }
-
 body{
+    width: 100vw;
+    max-width:100%;
+}
+.font-jockey{
+    font-family: 'Jockey One' !important;
+        font-style: normal;
+        font-weight: 400;
+}
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+        font-style: normal;
+        font-weight: 600;
+        
+}
+.background{
     background-color: black !important;
     background-image: url("../Assets/img/bg1.jpg");
     background-repeat: no-repeat;
         text-align: center;
         height: 100vh;
-        width: 100vw;
+       
         font-family: 'Jockey One' !important;
         font-style: normal;
         font-weight: 400;
         
 }
-
+.navigation{
+    height: 4.5rem;
+}
 .nav-link{
     color: aliceblue !important;
     font-size: 1.5rem !important;
@@ -61,12 +77,14 @@ button{
     border-image: linear-gradient(#54F2F2,#0599F6,#835D8D, #D32D43) 40;
    border-width: 2px;
    border-style: solid;
+   
    background: linear-gradient(117.54deg, rgba(91, 91, 91, 0.3) 6.26%, rgba(91, 91, 91, 0.15) 69.19%);
    box-shadow: 0px 4px 25px rgba(90, 22, 32, 0.2);
    backdrop-filter: blur(30px);
-   height: 4.5rem;
+   
    
 }
+
 .main{
    border-image: linear-gradient(117.54deg,#54F2F2,#0599F6,#835D8D, #D32D43) 40;
    border-width: 2px;
@@ -81,6 +99,7 @@ button{
    text-align: center;
    display: grid;
 }
+
 .intro{
    display: flex;
    color: white;
@@ -104,7 +123,53 @@ button{
     padding: 2rem; 
 }
 
+.footer{
+   
+    background: linear-gradient(180deg, rgba(12, 24, 32, 0.93) 25%, rgba(12, 24, 32, 0.86) 100%);
+    box-shadow: 0px -20px 25px rgba(2, 55, 98, 0.25), 0px -4px 10px rgba(27, 77, 117, 0.5);
+}
+hr{
+   border-image: linear-gradient(190.54deg,#0599F6,#835D8D, #D32D43) 1 !important;
+   border-style: solid;
+}
+.title{
+    color: aliceblue;
+}
+strong {
+    background: linear-gradient(180deg, #a12c45 25%, #2786d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.border-gd-1{
+    border-image:linear-gradient(1117.54deg,#0599F6,#835D8D, #D32D43) 1 !important;
+    border-style: solid;
+    border-width: 0.15rem;
+    padding: 0 0 !important;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+   
+}
 
+.form-control{
+    background: #4F6573 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color:azure !important;
+}
+.textarea{
+width: 68% !important;
+margin: 0;
+padding: 0;
+}
+
+.btn-gd{
+    color:azure !important;
+    border: none;
+    width: 5rem;
+    background: linear-gradient(135deg, #069AF5 -20.43%, #BD3754 108.95%);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
 
 
 @media only screen and (max-width: 770px) {

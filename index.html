@@ -10,35 +10,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    
-        <div class="container-fluid glass  ">
-          <nav class="navbar navbar-expand-lg">
-           
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contect</a>
-                </li>
-              </ul>
-              
-            </div>
-          </nav>
+        <section class="background">
+        <div class="container-fluid glass navigation">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg">
+        
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <h1>Jenish.</h1>
+              </a>
+              <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contect</a>
+                  </li>
+                </ul>
+        
+              </div>
+            </nav>
+          </div>
         </div>
        
         
@@ -56,7 +62,50 @@
              </div>
              
         </div>
-    
+        </section>
+        <hr class="m-0 "/>
+        <section class="footer">
+
+        <div class="container-fluid">
+        
+         <div class="container align-center justify-content-center">
+          <div class=" row title font-jockey">
+            <div class="mb-3">
+              <h1>Contact <strong>Me !</strong></h1>
+            </div>
+          </div>
+            <div class="row d-flex form-group justify-content-center">
+              <div class="mx-2 mb-3 col-md-4 col-sm-6 border-gd-1">
+               <input type="text" id="fullname" class="form-control m-0" placeholder="Full Name"/>
+              </div>
+              <div class="mx-2 mb-3 col-md-4 col-sm-6 border-gd-1">
+               <input type="text" id="Email" class="form-control" placeholder="Email"/>
+              </div>
+            </div>
+            <div class="row d-flex form-group justify-content-center">
+              <div class="mx-2 mb-3 col-md-4 col-sm-4 border-gd-1">
+               <input type="text" id="Contact Number" class="form-control" placeholder="Contact Numbe"/>
+              </div>
+              <div class="mx-2 mb-3 col-md-4 col-sm-4  border-gd-1">
+               <input type="text" id="Subject" class="form-control" placeholder="Subject"/>
+              </div>
+            </div>
+
+            <div class="row d-flex form-group justify-content-center">
+              <div class="col-md-8  mb-3 form-floating textarea border-gd-1">
+               <textarea type="text" style="height: 100px;" id="Description" class="form-control" placeholder="Description"></textarea>
+               <label for="Description">Description</label>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-auto ">
+                <button type="submit" class="btn  btn-md btn-gd">Submit </button>
+              </div>
+            </div>
+         </div>
+        </div>
+        </section>
 	
     </body>
 </html>
