@@ -39,7 +39,7 @@ body{
 .active{
     background: linear-gradient(113deg,#54F2F2,#0599F6,#835D8D, #D32D43);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    
 }
 hr{
   border: 1.5px solid #6AA5FF !important;
@@ -140,7 +140,6 @@ strong {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 .border-gd-1{
     border-image:linear-gradient(1117.54deg,#0599F6,#835D8D, #D32D43) 1 !important;

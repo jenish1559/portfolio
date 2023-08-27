@@ -1,111 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jenish-Portfolio</title>
-    <link rel="stylesheet" href="./Css/style.css">
-    <link rel="stylesheet" href="./Assets/bootstrap-5.3.0/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-        <section class="background">
-        <div class="container-fluid glass navigation">
-          <div class="container">
-            <nav class="navbar navbar-expand-lg">
-        
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav id="desktop-nav">
+      <div class="logo">Jenish Patel</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jenish Patel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Jenish Patel profile picture" />
+      </div> -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jenish Patel</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <!-- <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button> -->
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://in.linkedin.com/in/jenish-patel-73322b196'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/jenish1559'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1.5+ years <br />Web Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BE(Information and Technology)  Bachelors Degre</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Welcome to my portfolio showcasing 1.5 years of dedicated .NET development expertise. I am thrilled to present my journey of crafting innovative and impactful solutions that drive businesses forward using the power of .NET technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">BackEnd Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>.Net Mvc</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>.Net Blazor</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>.Net RazorPage Application</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">E-Commerce (ASP.NET Blazor)</h2>
+            <p> During my college years, I embarked on a journey to create a fully functional E-commerce website utilizing 
+              the power of .NET Blazor. This project was more than just a development endeavor; 
+              it was an exploration of how cutting-edge technology could be harnessed to provide seamless
+              online shopping experiences. </p>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button> -->
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">Book Inventory Management</h2>
+            <p>During my professional journey, I was entrusted with the responsibility of leading the development of
+               a book management software. This task required me to navigate the realms of software architecture,
+               while staying attuned to the unique requirements of
+               the project.While I am unable to display the project directly due to its confidential nature, I can highlight the key aspects of my involvement and the skills I gained.</p>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
               </button>
-              <a class="navbar-brand" href="#">
-                <h1>Jenish.</h1>
-              </a>
-              <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contect</a>
-                  </li>
-                </ul>
-        
-              </div>
-            </nav>
-          </div>
-        </div>
-       
-        
-        <div class="container d-flex main mt-4">
-
-            <div class="align-center intro">
-                <h1><span>Hey</span> , <span>I'm</span> <strong> &nbsp; Jenish </strong></h1>
-                <h5>Web Devloper | .net Developer</h5>
-                <button type="button" class="btn btn-outline-info mt-3">About Me</button>
-             </div>
-
-             <div class=" align-center">
-              <img class="mascot" src="Assets/img/img-1.png" alt="img" />
-             
-             </div>
-             
-        </div>
-        </section>
-        <hr class="m-0 "/>
-        <section class="footer">
-
-        <div class="container-fluid">
-        
-         <div class="container align-center justify-content-center">
-          <div class=" row title font-jockey">
-            <div class="mb-3">
-              <h1>Contact <strong>Me !</strong></h1>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
             </div>
           </div>
-            <div class="row d-flex form-group justify-content-center">
-              <div class="mx-2 mb-3 col-md-4 col-sm-6 border-gd-1">
-               <input type="text" id="fullname" class="form-control m-0" placeholder="Full Name"/>
-              </div>
-              <div class="mx-2 mb-3 col-md-4 col-sm-6 border-gd-1">
-               <input type="text" id="Email" class="form-control" placeholder="Email"/>
-              </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              /> -->
             </div>
-            <div class="row d-flex form-group justify-content-center">
-              <div class="mx-2 mb-3 col-md-4 col-sm-4 border-gd-1">
-               <input type="text" id="Contact Number" class="form-control" placeholder="Contact Numbe"/>
-              </div>
-              <div class="mx-2 mb-3 col-md-4 col-sm-4  border-gd-1">
-               <input type="text" id="Subject" class="form-control" placeholder="Subject"/>
-              </div>
+            <h2 class="experience-sub-title project-title">OutSorcing site</h2>
+            <p>In my professional journey, I've taken on a pivotal role in a confidential project that involves 
+              the creation of a freelancing platform using Razor Pages. While I must respect the confidentiality of the project, I can highlight my responsibilities and the skills I've applied.</p>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
             </div>
-
-            <div class="row d-flex form-group justify-content-center">
-              <div class="col-md-8  mb-3 form-floating textarea border-gd-1">
-               <textarea type="text" style="height: 100px;" id="Description" class="form-control" placeholder="Description"></textarea>
-               <label for="Description">Description</label>
-              </div>
-            </div>
-
-            <div class="row justify-content-center">
-              <div class="col-auto ">
-                <button type="submit" class="btn  btn-md btn-gd">Submit </button>
-              </div>
-            </div>
-         </div>
+          </div>
         </div>
-        </section>
-	
-    </body>
+      </div>
+      <div> There are Many Project I am working but I can't show Here..</div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Pateljenish333.jp@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://in.linkedin.com/in/jenish-patel-73322b196">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jenish Patel. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
